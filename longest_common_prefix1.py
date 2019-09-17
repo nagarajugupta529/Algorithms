@@ -26,9 +26,8 @@ def return_prefix(str1, str2):
 
 def common_prefix_main(li):
     """
-    list of strings
-    :param li:
-    :return:
+    :param li: list of strings
+    :return: longest common prefix <str>
     """
     prefix = li[0]
     for i in range(1, len(li)):
@@ -38,4 +37,5 @@ def common_prefix_main(li):
 
 if __name__ == "__main__":
     strings = ['flower', 'floor', 'flaws']
-    cp = common_prefix_main(strings)
+    output = common_prefix_main(strings)
+    print(output)
